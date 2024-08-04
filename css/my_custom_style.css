@@ -1,0 +1,190 @@
+body{
+    background-color: #01091c;
+    height: 100%;
+    margin: 0px;
+
+}
+
+/*Header*/
+
+header{
+
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.header-wrap{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center; 
+    margin: 1% 3% 0% 3%;
+
+}
+
+
+.header-wrap-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-part, .right-part{
+    display: flex;
+}
+
+.left-part .logo{
+    justify-content: flex-start;
+}
+
+.logo img{
+    width: 50%;
+}
+
+
+/*Body*/
+
+.principal_container{
+
+    background-image: linear-gradient(180deg, #01091c 0%, #011f65 20%, #0047b1 40%, #018bfb 70%, #5d8bff 100%);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 9000px;
+    margin: 0px;
+
+}
+
+.hero_title{
+
+    font-family: initial;
+    color: white;
+    margin: 0px;
+
+}
+
+.h2_content{
+
+    font-family: initial;
+    color: white;
+    margin: 0px; 
+    display: flex;
+    justify-content: center;  
+
+}
+
+.container_general_tabla_info {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+}
+
+
+
+.container_row {
+    max-width: 1200px;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0px;
+    padding: 2% 5% 2% 5%;
+}
+
+
+.container_row .line {
+    border: solid white;
+    width: calc(100% / 3);
+    height: inherit;
+}
+
+
+
+
+/**********Responsivo*********/
+
+/* desktop */
+
+@media screen and (min-width: 769px){
+
+    .left-part{
+        width: 30%;
+    }
+
+    .right-part{
+        width: 70%;
+    }
+
+
+    .container_row div:nth-child(1) {
+        border-width: 3px 1.5px 3px 3px;
+    }
+
+    .container_row div:nth-child(2) {
+        border-width: 3px 1.5px 3px 1.5px;
+    }
+
+    .container_row div:nth-child(3) {
+        border-width: 3px 3px 3px 1.5px;
+    }
+
+
+
+}
+
+/*mobile*/
+
+@media screen and (max-width: 768px){
+
+    .left-part{
+        width: 100%;
+    }
+
+    .right-part{
+        width: 100%;
+    }
+
+    .container_general_tabla_info{
+        height: 500px;
+    }
+
+
+    .container_row div:nth-child(1) {
+        border-width: 1.5px 3px 1.5px 3px;
+    }
+
+    .container_row div:nth-child(2) {
+        border-width: 1.5px 3px 1.5px 3px;
+    }
+
+    .container_row div:nth-child(3) {
+        border-width: 1.5px 3px 1.5px 3px;
+    }
+
+    .container_row{
+
+        max-width: 1200px;
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0px;
+        padding: 2% 5% 2% 5%;
+
+    }
+
+    .container_row .line{
+        border: solid white;
+        width: 100%;
+        height: inherit;
+    }
+
+
+}
