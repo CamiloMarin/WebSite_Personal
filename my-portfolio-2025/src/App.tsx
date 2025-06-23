@@ -1,6 +1,4 @@
-import './App.css'
 import { SectionContainer } from './components/SectionContainer/SectionContainer';
-
 
 function App() {
   return (
