@@ -1,27 +1,21 @@
 import "./App.css";
-import "./components/SectionContainer/SectionContainer.css";
-import { SectionContainer } from "./components/SectionContainer/SectionContainer";
+
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import Home from "./components/Pages/Home";
+
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
-
-      <SectionContainer
-        id="section1"
-        className="flex items-center justify-center"
-        height={300}
-      >
-        <h2>Primera sección</h2>
-      </SectionContainer>
-
-      <SectionContainer
-        id="section2"
-        className="flex items-center justify-center red_background totalWidth"
-        height={500}
-      >
-       <h2>Segunda sección</h2>
-      </SectionContainer>
+      
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+      
     </>
   );
 }
