@@ -1,0 +1,29 @@
+.app-header {
+    background-color: white;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 40px;
+    justify-self: anchor-center;
+    height: 70px;
+}
+
+/*LOGO*/
+
+.logo_block{
+    width: 20%;
+}
+
+.logo_block img{
+    width: auto;
+    height: 45px;
+}
+
+.menu_block{
+    width: 50%;
+}
+
+.cv_button_block{
+    width: 30%;
+}

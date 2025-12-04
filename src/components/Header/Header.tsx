@@ -1,7 +1,8 @@
 
-export function Header(props: {logoUrl: string; menuItems?: string[];}) {
+export function Header(props: {logoUrl: string; menuItems?: string[]; buttonLink?: string;}) {
 let logoUrl = props.logoUrl;
 let menuItems = props.menuItems;
+let buttonLink = props.buttonLink;
     return(
         <header className="app-header">
             <div className="logo_block">
@@ -13,7 +14,7 @@ let menuItems = props.menuItems;
                 ))}
             </div>
             <div className="cv_button_block">
-                <button className="cv_btn">Resume</button>
+                <a href={buttonLink} className="cv_btn">Resume</a>
             </div>
             
         </header>
