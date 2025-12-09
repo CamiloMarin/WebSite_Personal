@@ -5,13 +5,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(33, 33, 33);
+  background: #2A7B9B;
+  background: linear-gradient(21deg, #2a7b9b 14%, #02347b 74%);
+  
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  max-width: 100% !important;
 }
 
 #root{
@@ -61,6 +65,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+section{
+  box-sizing: border-box;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -72,4 +81,29 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+/* Noise */
+
+.noise {
+  position: relative;
+  /* Other styles for your container */
+}
+
+.noise:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: url(#grainy);
+  pointer-events: none; /* Allows interaction with content below */
+  opacity: 1; /* Adjust for desired grain intensity */
+}
+
+/*Colapso de margen*/
+* {
+  margin-block: 0; /* O margin: 0; */
 }
