@@ -1,5 +1,7 @@
 import MainLayout from "../Layaouts/MainLayout";
 
+import { GrainElement } from "../GrainSVG/Grain";
+
 import { SectionContainer } from "../SectionContainer/SectionContainer";
 import "../SectionContainer/SectionContainer.css";
 
@@ -33,19 +35,13 @@ export default function Home() {
         >
         <h2>Segunda sección</h2>
         </SectionContainer>
+          
+        {/* Grain component for bg */}
+        <GrainElement></GrainElement>
 
 
-
-        <svg style={{display: "none"}}>
-            <filter id="grainy">
-                <feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="3" stitchTiles="stitch" />
-                <feColorMatrix type="saturate" values="0" />
-                <feComponentTransfer>
-                <feFuncA type="linear" slope="0.5" />
-                </feComponentTransfer>
-            </filter>
-        </svg>
 
     </MainLayout>
   );
 }
+
