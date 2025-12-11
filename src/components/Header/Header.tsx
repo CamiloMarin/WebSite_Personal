@@ -1,12 +1,17 @@
-export function Header(props: {logoUrl: string; menuItems?: string[]; buttonLink?: string;}) {
-let logoUrl = props.logoUrl;
+// Importamos el SVG del logo
+import {MainLogo} from '../Logo/Logo.tsx';
+
+export function Header(props: {logoUrl?: string; menuItems?: string[]; buttonLink?: string;}) {
+let logoUrl = props.logoUrl ?? null;
 let menuItems = props.menuItems;
 let buttonLink = props.buttonLink;
     return(
         <header className="app-header">
             <div className="logo_block">
-                <img src={logoUrl} alt="App Logo" />
+            {logoUrl ? <img src={logoUrl} alt="App Logo" /> : <MainLogo /> }
+    
             </div>
+
             <div className="navigation_block">
                 <div className="menu_block">
                     {menuItems?.map((item, index) => (
