@@ -116,8 +116,8 @@ section{
 @font-face {
   font-family: 'Montserrat';
   src:
-    url('/fonts/Montserrat/Montserrat-VariableFont_wght.woff2') format('woff2'),
-    url('/fonts/Montserrat/Montserrat-VariableFont_wght.woff') format('woff');
+    url('/src/fonts/Montserrat/Montserrat-VariableFont_wght.woff2') format('woff2'),
+    url('/src/fonts/Montserrat/Montserrat-VariableFont_wght.woff') format('woff');
   font-weight: 100 900;
   font-style: normal;
 }
@@ -125,8 +125,8 @@ section{
 @font-face {
   font-family: 'Montserrat-italic';
   src:
-    url('/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff2') format('woff2'),
-    url('/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff') format('woff');
+    url('/src/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff2') format('woff2'),
+    url('/src/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff') format('woff');
   font-weight: 100 900;
   font-style: normal;
 }
@@ -138,7 +138,7 @@ section{
 @font-face {
   font-family: 'Bebas Neue';
   src:
-    url('/fonts/BebasNeue/BebasNeue-Regular.woff2') format('woff2'),
+    url('/src/fonts/BebasNeue/BebasNeue-Regular.woff2') format('woff2'),
     url('/fonts/BebasNeue/BebasNeue-Regular.woff') format('woff');
   font-weight: 100 900;
   font-style: normal;
