@@ -1,15 +1,21 @@
 // Importamos el SVG del logo
 import {MainLogo} from '../Logo/Logo.tsx';
 
-export function Header(props: {logoUrl?: string; menuItems?: string[]; buttonLink?: string;}) {
-let logoUrl = props.logoUrl ?? null;
+export function Header(props: { menuItems?: string[]; buttonLink?: string;}) {
+
 let menuItems = props.menuItems;
 let buttonLink = props.buttonLink;
     return(
         <header className="app-header">
             <div className="logo_block">
-            {logoUrl ? <img src={logoUrl} alt="App Logo" /> : <MainLogo /> }
-    
+             <MainLogo 
+             classA="logo_color_a" 
+             classB="logo_color_b" 
+             classC="logo_color_c"
+             colorA='#df9753'
+             colorB='#4682da'
+             colorC='#0bdada'   
+             /> 
             </div>
 
             <div className="navigation_block">
