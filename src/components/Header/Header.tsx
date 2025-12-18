@@ -9,12 +9,10 @@ let buttonLink = props.buttonLink;
         <header className="app-header">
             <div className="logo_block">
              <MainLogo 
-             classA="logo_color_a" 
-             classB="logo_color_b" 
-             classC="logo_color_c"
              colorA='#df9753'
              colorB='#4682da'
-             colorC='#0bdada'   
+             colorC='#ffffffff'
+             colorD='#0bdada'   
              /> 
             </div>
 

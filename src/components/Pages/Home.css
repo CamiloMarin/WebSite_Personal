@@ -1,14 +1,11 @@
 #section1{
+    background: #94dee9;
+    background: linear-gradient(0deg, rgba(148, 222, 233, 1) 14%, rgba(148, 189, 233, 1) 58%, rgba(105, 141, 214, 1) 100%);
     overflow: hidden;
-    background-image: url(../../assets/Images/Home/nubes-de-cielo.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
 }
 
 h1{
-    margin-top: 10%;
+padding-top: 10%;
     font-size: 5.2em;
 }
 
@@ -33,7 +30,7 @@ h1{
 
 img.nube-1 {
     position: absolute;
-    width: 500px;
+    width: 600px;
     right: 0;
     bottom: 0;
 }

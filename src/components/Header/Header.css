@@ -34,17 +34,16 @@
 /*LOGO*/
 
 .logo_block {
-    width: 250px;
+    width: 200px;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo_block img {
-  width: auto;
-  height: 45px;
- 
+
+svg.my_logo_svg {
+    height: fit-content;
 }
 
 /*MENU*/
@@ -61,6 +60,8 @@
   font-weight: 600;
   text-transform: capitalize;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
 }
 
 .cv_button_block {
@@ -76,4 +77,6 @@
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
 }

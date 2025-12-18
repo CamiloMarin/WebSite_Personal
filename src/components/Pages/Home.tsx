@@ -18,12 +18,15 @@ export default function Home() {
         height={"100vh"}
       >
         <div className="hero_section">
+          <div style={{ height: '100px', display: 'block'}} className="space_top">
+            <span style={{ height: '10%', display: 'block' }}></span>
+          </div>
           <h1>
             <span className="name_tp">Camilo Marín Villa </span>
             <span className="profesion_tp">Frontend developer</span>
           </h1>
           <div className="nubes">
-            <img className="nube-1" src={"src/assets/Images/Home/nubes-1.webp"} alt="Nubes de fondo" />
+            <img className="nube-1 pixelated" src={"src/assets/Images/Home/Nubes_pixel_art_01.webp"} alt="Nubes de fondo" />
           </div>
         </div>
       </SectionContainer>

@@ -108,6 +108,11 @@ section{
   margin-block: 0; /* O margin: 0; */
 }
 
+/*Pixelated css*/
+
+.pixelated{
+  image-rendering: pixelated;
+}
 
 /*///////////////////////////////////////// FONTS /////////////////////////////////////////*/
 
