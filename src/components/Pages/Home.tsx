@@ -26,7 +26,7 @@ export default function Home() {
             <span className="profesion_tp">Frontend developer</span>
           </h1>
           <div className="nubes">
-            <img className="nube-1 pixelated" src={"src/assets/Images/Home/Nubes_pixel_art_01.webp"} alt="Nubes de fondo" />
+            <img className="nube-1 pixelated" src={"src/assets/Images/Home/Nubes_background_pixel_art_01.webp"} alt="Nubes de fondo" />
           </div>
         </div>
       </SectionContainer>
